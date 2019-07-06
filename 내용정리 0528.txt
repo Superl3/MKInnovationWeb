@@ -19,3 +19,7 @@ MK Innovation
 - 로고 소개
 
 ENG / KOR버전
+
+todo:
+- sitemesh / react로 반복사용되는 레이아웃 구성해놓기
+- 포트폴리오부분 구상
