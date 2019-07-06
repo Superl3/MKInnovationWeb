@@ -14,102 +14,76 @@
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 		<script src="js/jquery.min.js"></script>
 		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>			
+		<script src="js/bootstrap.min.js"></script>		
+		<script src="js/scripts.js"></script>	
  
-		<link href="css/animate.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/custom.css">
 	</head>
-	<style>
-		.dropdown:hover>.dropdown-menu {
-			display: block;
-			opacity: 1;
-		}
-
-		.dropdown .dropdown-menu{
-    display: block; 
-    opacity:0;
-    -webkit-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
-    -ms-transition: all 200ms ease-in;
-    -o-transition: all 200ms ease-in;
-    transition: all 200ms ease-in;
- }
-		.dropdown>.dropdown-toggle:active {
-			/*Without this, clicking will make it sticky*/
-			pointer-events: none;
-		}
-		.bg { 
-		/* The image used */
-		background-image: url("img/background.jpg");
-
-		/* Full height */
-		height: 100%; 
-
-		/* Center and scale the image nicely */
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-
-		
-	}
-	.navbar {
-   background-color: rgba(0, 0, 0, 0.8);
-}
-.footer {
-   background-color: rgba(0, 0, 0, 0.8);
-}
-.dropdown-item a:hover { color: #000 }
-	</style>
 	<header>
-		<nav class="navbar navbar-expand-sm navbar-dark">
-			<div class="container justify-content-around py-2">
-				<ul class="navbar-nav row ">		
-						<!-- Dropdown -->
-					<li class="nav-item dropdown col-md-auto">
-						<a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							회사소개
-						</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">We Are</a>
-							<a class="dropdown-item" href="#">Philosophy</a>
+		<div class="fixed-top">
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+					<div class="container-fluid justify-content-around py-1">
+						<ul class="navbar-nav">		
+								<!-- Dropdown -->
+							<li class="nav-item col col-md-auto">
+								<a role="button" class="nav-link head-introduce" data-toggle="collapse" href="#collapseIntroduce" aria-expanded="true" aria-controls="collapseIntroduce" data-parent="#navmenu">회사소개</a>
+							</li>		
+		
+							<li class="nav-item col-md-auto">
+								<a class="nav-link" href="#">사업영역</a>
+							</li>
+							<li class="nav-item col col-md-auto">
+								<a role="button" class="nav-link head-portfolio" data-toggle="collapse" href="#collapsePortfolio" aria-expanded="true" aria-controls="collapsePortfolio" data-parent="#navmenu">포트폴리오</a>
+							</li>		
+<!--									
+							<li class="nav-item dropdown col-md-auto">
+								<a class="nav-link" href="#" id="navbardrop" data-toggle="collapse" data-target="collapseExample" aria-haspopup="true" aria-expanded="false">
+									포트폴리오
+								</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">TV쇼</a>
+									<a class="dropdown-item" href="#">프로모션</a>
+									<a class="dropdown-item" href="#">온라인 바이럴</a>
+								</div>
+							</li>
+-->
+							<li class="nav-item col col-md-auto">
+								<a class="nav-link" href="#">파트너</a>
+							</li>		
+						</ul>
+							
+					</div>
+			</nav>
+			<nav class="navbar">
+				<div class="container-fluid justify-content-center">
+					<div id="navmenu" role="tablist" aria-multiselectable="true" class="panel-group">		
+						<div class="panel-portfolio collapse p-0" id="collapsePortfolio" data-parent="#navmenu">
+							<a class="item col-md-auto" href="#">TV쇼</a>
+							<a class="item col-md-auto" href="#">프로모션</a>
+							<a class="item col-md-auto" href="#">온라인 바이럴</a>
 						</div>
-					</li>
-					<li class="nav-item col col-md-auto">
-						<a class="nav-link" href="#">사업영역</a>
-					</li>	
-					<li class="nav-item dropdown col-md-auto">
-						<a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							포트폴리오
-						</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">TV쇼</a>
-							<a class="dropdown-item" href="#">프로모션</a>
-							<a class="dropdown-item" href="#">온라인 바이럴</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown col col-md-auto">
-						<a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							파트너
-						</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">로고소개</a>
-						</div>
-					</li>		
-				</ul>
-			</div>
-		</nav>
+						<div class="panel-introduce collapse p-0" id="collapseIntroduce" data-parent="#navmenu">
+							<a class="item col-md-auto" href="#">We Are</a>
+							<a class="item col-md-auto" href="#">Philosophy</a>
+						</div>			
+					</div>
+				</div>
+			</nav>
+		</div>
 	</header>
-	<body>
+	<body style="margin-top:50px">	
 		<div class="bg">
-			<div class="position-relative shadow-sm overflow-hidden text-center bg-light">
+			<div class="position-relative shadow-sm overflow-hidden text-center">
 				<div class="col-md-5 p-lg-5 mx-auto my-5">
-					<h1 class="display-4 font-weight-normal">MK Innovation</h1>
+					<h1 class="display-4 font-weight-normal text-white">MK Innovation</h1>
 				</div>
 			</div>
 		<div class="container">
-			<img src="img/main.jpg">
+			<img class="" src="img/main.jpg">
 		</div>
 		<a></a>
 		</div>
+		
 	</body>
 	<footer class="footer page-footer font-small text-white-50">
 
