@@ -22,73 +22,69 @@
 	<header>
 		<div class="fixed-top">
 			<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-					<div class="container-fluid justify-content-around py-1">
-						<ul class="navbar-nav">		
-								<!-- Dropdown -->
-							<li class="nav-item col col-md-auto">
-								<a role="button" class="nav-link head-introduce" data-toggle="collapse" href="#collapseIntroduce" aria-expanded="true" aria-controls="collapseIntroduce" data-parent="#navmenu">회사소개</a>
-							</li>		
-		
-							<li class="nav-item col-md-auto">
-								<a class="nav-link" href="businessarea.html">사업영역</a>
-							</li>
-							<li class="nav-item col col-md-auto">
-								<a role="button" class="nav-link head-portfolio" data-toggle="collapse" href="#collapsePortfolio" aria-expanded="true" aria-controls="collapsePortfolio" data-parent="#navmenu">포트폴리오</a>
-							</li>		
-<!--									
-							<li class="nav-item dropdown col-md-auto">
-								<a class="nav-link" href="#" id="navbardrop" data-toggle="collapse" data-target="collapseExample" aria-haspopup="true" aria-expanded="false">
+				<div class="container-fluid justify-content-around py-2 text-center">
+					<ul class="navbar-nav">		
+							<!-- Dropdown -->
+						<li class="head-introduce col-sm-auto">
+							<a class="nav-link" data-toggle="collapse" href="#introduce">회사소개</a>
+						</li>	
+
+						<li class="col-sm-auto">
+							<a class="nav-link" href="businessarea.html">사업영역</a>
+						</li>
+						
+						<li class="head-portfolio col-sm-auto">
+							<a class="nav-link" data-toggle="collapse" href="#portfolio" onmouseover="click()" onmouseout="click();">포트폴리오</a>
+						</li>		
+<!--								
+						<li class="nav-item dropdown col-md-auto">
+							<a class="nav-link" href="#" id="navbardrop" data-toggle="collapse" data-target="collapseExample" aria-haspopup="true" aria-expanded="false">
 									포트폴리오
-								</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">TV쇼</a>
-									<a class="dropdown-item" href="#">프로모션</a>
-									<a class="dropdown-item" href="#">온라인 바이럴</a>
-								</div>
-							</li>
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">TV쇼</a>
+								<a class="dropdown-item" href="#">프로모션</a>
+								<a class="dropdown-item" href="#">온라인 바이럴</a>
+							</div>
+						</li>
 -->
-							<li class="nav-item col col-md-auto">
-								<a class="nav-link" href="partner.html">파트너</a>
-							</li>		
-						</ul>
-							
-					</div>
-			</nav>
-			<nav class="navbar">
-				<div class="container-fluid justify-content-center">
-					<div id="navmenu" role="tablist" aria-multiselectable="true" class="panel-group">		
-						<div class="panel-portfolio collapse p-0" id="collapsePortfolio" data-parent="#navmenu">
-							<a class="item col-md-auto" href="#">TV쇼</a>
-							<a class="item col-md-auto" href="#">프로모션</a>
-							<a class="item col-md-auto" href="#">온라인 바이럴</a>
-						</div>
-						<div class="panel-introduce collapse p-0" id="collapseIntroduce" data-parent="#navmenu">
-							<a class="item col-md-auto" href="weare-map.html">We Are</a>
-							<a class="item col-md-auto" href="weare-typo.html">Philosophy</a>
-						</div>			
-					</div>
+						<li class="col-sm-auto">
+							<a class="nav-link" href="partner.html">파트너</a>
+						</li>		
+					</ul>
 				</div>
+			</nav>
+			<nav class="panel container-fluid text-center">
+				<div class="row collapse" id="portfolio">
+					<a class="col-sm" href="#">TV쇼</a>
+					<a class="col-sm" href="#">프로모션</a>
+					<a class="col-sm" href="#">온라인 바이럴</a>
+				</div>
+				<div class="row collapse" id="introduce">
+					<a class="col-sm" href="weare-map.html">We Are</a>
+					<a class="col-sm" href="weare-typo.html">Philosophy</a>
+				</div>	
 			</nav>
 		</div>
 	</header>
-	<body style="margin-top:50px">	
+	<body style="margin-top:50px;">	
 		<div class="bg">
-			<div class="position-relative overflow-hidden text-center">
-				<div class="col-md-5 p-lg-5 mx-auto my-5">
-					<h1 class="display-4 font-weight-normal">MK Innovation</h1>
+			<div class="text-center">
+				<div class="col-md my-5">
+					<h1 class="display-4">MK Innovation</h1>
 				</div>
 			</div>
 		<div class="container d-flex justify-content-center">
-			<img class="" src="img/main.jpg">
+			<img src="img/main.jpg">
 		</div>
 		<a></a>
 		</div>
 		
 	</body>
-	<footer class="footer page-footer bg-dark font-small text-white-50">
+	<footer style="margin-top:50px;" class="footer bg-dark font-small text-white-50">
 
 			<!-- Copyright -->
-			<div class="footer-copyright text-center py-3">© 2019 Copyright: MKInnovations All Right Reserved.</a>
+			<div class="text-center py-3">© 2019 Copyright: MKInnovations All Right Reserved.</a>
 			</div>
 			<!-- Copyright -->	
 	</footer>
